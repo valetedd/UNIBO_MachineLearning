@@ -2,14 +2,11 @@ import os
 import openai
 import chainlit as cl
 
-from llama_index.core import (
-    Settings,
-    VectorStoreIndex,
-    SimpleDirectoryReader
-)
+from llama_index.core import (Settings, VectorStoreIndex,SimpleDirectoryReader)
 from llama_index.llms.openai import OpenAI
 from llama_index.embeddings.openai import OpenAIEmbedding
 from llama_index.core.memory import ChatMemoryBuffer
+
 
 @cl.password_auth_callback
 def auth_callback(username: str, password: str):

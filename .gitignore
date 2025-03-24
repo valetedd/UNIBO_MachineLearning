@@ -1,1 +1,4 @@
 data/wikiart
+models
+__pycache__
+rag_app/.env
